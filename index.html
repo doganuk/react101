@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+
+</head>
+<body>
+
+    <div id="root">   </div>
+
+
+    <script type="text/babel"> 
+
+    const title="baslik la bu";
+    const price="1000 $";
+
+
+    const markup=
+               <div className="row">
+                    <div className="col s12 m7">
+                        <div className="card">
+                            <div className="card-image">
+                            <img src="https://image.shutterstock.com/z/stock-photo-colorful-flower-on-dark-tropical-foliage-nature-background-721703848.jpg"/>
+                            <span className="card-title">Card Title</span>
+                            </div>
+
+                            <div className="card-content">
+                            <p>{title}</p>
+                            </div>
+                            
+                            <div className="card-action">
+                            <a href="#">{price}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>;
+
+       ReactDOM.render(
+           markup,
+           document.getElementById('root')
+       );
+    
+    </script>
+    
+</body>
+</html>
